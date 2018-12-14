@@ -1,0 +1,38 @@
+{
+  "name": "leonardo/arbory-soap",
+  "description": "Arbory soap client package",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rūdolfs Heimanis",
+      "email": "rudolfs.heimanis@cubesystems.lv"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://gitlab+deploy-token-24:nLznqfZX6QssTJjDa1o6@git.cubesystems.lv/latvenergo/soap-services.git"
+    }
+  ],
+  "require": {
+    "php": "^7.1.3",
+    "leonardo/soap-services": "dev-master",
+    "arbory/arbory": "0.3.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Leonardo\\Arbory\\Soap\\": "src"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Leonardo\\Arbory\\Soap\\Providers\\ServiceCallLoggingProvider"
+      ]
+    }
+  }
+}
