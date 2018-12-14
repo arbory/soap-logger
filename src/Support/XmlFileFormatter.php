@@ -28,6 +28,6 @@ class XmlFileFormatter
 
         $doc->loadXML($text);
 
-        return $doc->saveXML($text) ?: $text;
+        return $doc->saveXML() ?: $text;
     }
 }
