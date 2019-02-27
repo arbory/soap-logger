@@ -1,6 +1,6 @@
 <?php
 
-namespace Leonardo\Arbory\Soap\Http\Controllers\Admin;
+namespace Arbory\SoapLogger\Http\Controllers\Admin;
 
 use Arbory\Base\Admin\Admin;
 use Arbory\Base\Admin\Form;
