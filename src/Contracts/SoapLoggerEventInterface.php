@@ -2,7 +2,7 @@
 
 namespace Arbory\SoapLogger\Contracts;
 
-interface ArborySoapLoggerEventInterface
+interface SoapLoggerEventInterface
 {
     public function getRequestBody(): string;
 
