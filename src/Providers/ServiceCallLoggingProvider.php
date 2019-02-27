@@ -7,10 +7,7 @@ declare(strict_types=1);
 
 namespace Arbory\SoapLogger\Providers;
 
-use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
-use Leonardo\Arbory\Soap\Listeners\ServiceCallListener;
-use Leonardo\Services\Soap\Events\ServiceCall;
 
 /**
  * Class ServiceCallLoggingProvider
@@ -23,8 +20,6 @@ class ServiceCallLoggingProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
-
-        Event::listen(ServiceCall::class, ServiceCallListener::class);
+        $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
     }
 }
