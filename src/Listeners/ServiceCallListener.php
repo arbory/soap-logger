@@ -5,9 +5,10 @@
  */
 declare(strict_types=1);
 
-namespace Leonardo\Arbory\Soap\Listeners;
+namespace Arbory\SoapLogger\Listeners;
 
-use Leonardo\Arbory\Soap\Services\ServiceCall;
+use Arbory\SoapLogger\Contracts\ArborySoapLoggerEventInterface;
+use Arbory\SoapLogger\Services\ServiceCall;
 use Leonardo\Services\Soap\Events\ServiceCall as Event;
 
 /**
@@ -20,7 +21,7 @@ class ServiceCallListener
      * @param Event $call
      * @return void
      */
-    public function handle(Event $call): void
+    public function handle(ArborySoapLoggerEventInterface $call): void
     {
         ServiceCall::create([
             'request_body' => $call->getRequestBody(),

@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Leonardo\Arbory\Soap\Support;
+namespace Arbory\SoapLogger\Support;
 
 use DOMDocument;
 

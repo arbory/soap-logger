@@ -11,8 +11,8 @@ use Arbory\Base\Html\Html;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Leonardo\Arbory\Soap\Services\ServiceCall;
-use Leonardo\Arbory\Soap\Support\XmlFileFormatter;
+use Arbory\SoapLogger\Services\ServiceCall;
+use Arbory\SoapLogger\Support\XmlFileFormatter;
 
 /**
  * Class ServiceCallsController

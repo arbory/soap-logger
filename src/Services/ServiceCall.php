@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Leonardo\Arbory\Soap\Services;
+namespace Arbory\SoapLogger\Services;
 
 use Illuminate\Database\Eloquent\Model;
 

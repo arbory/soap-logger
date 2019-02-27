@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Leonardo\Arbory\Soap\Providers;
+namespace Arbory\SoapLogger\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
